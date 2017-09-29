@@ -33,6 +33,9 @@ width:75vw;
       .social-link {
           background: rgba(150, 150, 150, 0.4);
           color: blue;
+            height: 36px;
+  width: 36px;
+
       }
 
       /* BIO STYLES */
@@ -59,6 +62,19 @@ padding:20px;
     .bio-copy a {
           color: green;
     }
+  .test-box {
+    background: #9db6dd;
+    margin: 50px;
+    width: 200px;
+  }
+  .test-box-nosizing {
+    border: 10px solid #000;
+    padding: 40px;
+  }
+  .test-box-sizing {
+    box-sizing: border-box;
+    width: auto;
+  }
     </style>
   </head>
   <body>
@@ -80,6 +96,18 @@ padding:20px;
 
 
     <h2>I'm an h2</h2>
+
+<div class="test-box">
+  200px wide
+</div>
+<div class="test-box test-box-nosizing">
+  200px wide + border + padding = 300px
+</div>
+<div class="test-box test-box-nosizing test-box-sizing">
+  200px wide + border + padding + box-sizing: border-box = 200px
+</div>
+
+
 <div class="bio-wrapper">
   <div class="bio-box">
     <h3>Michael Hartl</h3>
